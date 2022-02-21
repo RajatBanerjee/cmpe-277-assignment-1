@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     private void incrementCounter() {
         ctr++;
         TextView txtHello = (TextView)findViewById(R.id.helloworld);
-        txtHello.setText("Activity Counter: " +  ctr);
+        txtHello.setText("Counter = " +  ctr);
     }
 
 }
