@@ -1,7 +1,9 @@
 package com.example.cmp_277_assignment1;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -65,6 +67,24 @@ public class MainActivity extends AppCompatActivity {
     public void switchActivity(View view) {
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         startActivity(intent);
+    }
+
+
+    public void launchDialog(View view) {
+        AlertDialog.Builder alert1 = new AlertDialog.Builder(MainActivity.this)
+                .setCancelable(true)
+                .setMessage("this is a dialog box")
+                .setCancelable(true)
+                .setNeutralButton("close this", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+
+        printLog();
+        AlertDialog dialog1 = alert1.create();
+        dialog1.show();
     }
 
     private void printLog(){

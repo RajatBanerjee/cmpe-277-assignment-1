@@ -22,7 +22,7 @@
         android:layout_width="178dp"
         android:layout_height="80dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="136dp"
         android:onClick="switchActivity"
         android:text="2nd activity"
@@ -62,5 +62,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="172dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="106dp"
+        android:onClick="launchDialog"
+        android:text="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
